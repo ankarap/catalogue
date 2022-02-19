@@ -1,0 +1,368 @@
+/* Обнуление */
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+ul,
+ol,
+li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+html,
+body {
+	height: 100%;
+	line-height: 1;
+	font-size: 16px;
+	font-family: Tahoma;
+}
+/*----------------------------------------*/
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	line-height: 1;
+	flex-direction: column;
+}
+._container {
+	max-width: 1400px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+/*----------------------------------------*/
+.page {
+	padding: 30px 0px 0px 180px;
+}
+.page__container {
+	display: flex;
+}
+.page-aside {
+	flex: 0 0 204px;
+}
+.page-aside__title {
+	font-size: 26px;
+	color: #00a550;
+	text-align: left;
+	letter-spacing: 1%;
+	line-height: 33px;
+}
+.page-aside__block {
+}
+.page-aside__text {
+	font-size: 12px;
+	color: #8c8c8c;
+	text-align: left;
+	letter-spacing: 1%;
+	line-height: 28px;
+}
+/*---------------------------------*/
+.page-content {
+}
+.content {
+}
+.content__container {
+}
+.content__menu {
+}
+.content__home {
+	font-size: 10px;
+	color: #8c8c8c;
+	text-decoration: underline;
+	letter-spacing: 1%;
+	line-height: 48px;
+}
+.content__home::after {
+	content: "→";
+}
+.content__products {
+	font-size: 10px;
+	color: #00a550;
+	letter-spacing: 1%;
+	line-height: 48px;
+}
+.content__header {
+}
+.header-block {
+}
+.header-block__title {
+	font-size: 36px;
+	align-items: left;
+	letter-spacing: 1%;
+	line-height: 46px;
+	margin-bottom: 16px;
+}
+.content__row {
+	display: flex;
+	margin-bottom: 40px;
+	padding: 0;
+}
+.content__body {
+	flex: 1 1 auto;
+	border-left: 0.5px solid #8c8c8c;
+	border-top: 0.5px solid #8c8c8c;
+	border-bottom: 0.5px solid #8c8c8c;
+	background-color: #eeee;
+}
+.content__subtitle {
+	font-size: 26px;
+	letter-spacing: 1%;
+	line-height: 40px;
+	color: #00a650;
+	padding: 24px 176px 32px 24px;
+	text-decoration: underline;
+}
+.contnet__list {
+	padding-left: 20px;
+	column-count: 2;
+}
+.content__list li {
+	font-size: 18px;
+	line-height: 15.73px;
+	letter-spacing: 1%;
+}
+.contnet__list li::before {
+	content: "•";
+	color: #00a650;
+}
+.content__item {
+	padding-bottom: 30px;
+}
+.content__image {
+	margin-right: 120px;
+	border-bottom: 0.5px solid #8c8c8c;
+	border-top: 0.5px solid #8c8c8c;
+	border-right: 0.5px solid #8c8c8c;
+}
+.content__text {
+	font-size: 18px;
+	line-height: 15.73px;
+	font-weight: bold;
+	letter-spacing: 1%;
+	line-height: 20px;
+	padding-bottom: 30px;
+	margin-left: 10px;
+}
+/*!Алаптация 320-----*/
+@media (max-width: 320px) {
+	.page-aside {
+		display: none;
+	}
+	.page-content {
+	}
+	.content__container {
+		margin-left: -190px;
+	}
+	.header-block__title {
+		font-size: 26px;
+		align-items: left;
+		letter-spacing: 1%;
+		line-height: 36px;
+		margin-bottom: 16px;
+	}
+	.content__row {
+		margin-bottom: 40px;
+		margin-left: -10px;
+	}
+	.content__body {
+		border-right: 0.5px solid #8c8c8c;
+	}
+	.content__subtitle {
+		font-size: 18px;
+		letter-spacing: 1%;
+		line-height: 28px;
+		color: #00a650;
+		padding: 5px;
+		text-decoration: underline;
+	}
+	.content__image {
+		display: none;
+	}
+	.contnet__list {
+		padding-left: 15px;
+	}
+	.content__list li {
+		font-size: 10px;
+	}
+}
+/*!Алаптация 479-----*/
+@media (max-width: 479px) {
+	.page-aside {
+		display: none;
+	}
+	.page-content {
+	}
+	.content__container {
+		margin-left: -190px;
+	}
+	.content__home {
+		font-size: 12px;
+		color: #8c8c8c;
+		text-decoration: underline;
+		letter-spacing: 1%;
+		line-height: 48px;
+	}
+	.content__products {
+		font-size: 12px;
+		color: #00a550;
+		letter-spacing: 1%;
+		line-height: 48px;
+	}
+	.header-block__title {
+		font-size: 26px;
+		align-items: left;
+		letter-spacing: 1%;
+		line-height: 36px;
+		margin-bottom: 16px;
+	}
+	.content__row {
+		margin-bottom: 40px;
+		margin-left: -10px;
+	}
+	.content__body {
+		border-right: 0.5px solid #8c8c8c;
+	}
+	.content__subtitle {
+		font-size: 18px;
+		letter-spacing: 1%;
+		line-height: 28px;
+		color: #00a650;
+		padding: 5px;
+		text-decoration: underline;
+	}
+	.content__image {
+		display: none;
+	}
+	.contnet__list {
+		padding-left: 15px;
+		column-count: 1;
+	}
+	.content__list li {
+		font-size: 10px;
+	}
+}
+/*!Алаптация 769-----*/
+@media (max-width: 769px) {
+	.page__container {
+	}
+	.page-aside {
+	}
+	.page-content {
+	}
+	.content__container {
+	}
+	.content__home {
+		font-size: 12px;
+		color: #8c8c8c;
+		text-decoration: underline;
+		letter-spacing: 1%;
+		line-height: 48px;
+	}
+	.content__products {
+		font-size: 12px;
+		color: #00a550;
+		letter-spacing: 1%;
+		line-height: 48px;
+	}
+	.header-block__title {
+		font-size: 26px;
+		align-items: left;
+		letter-spacing: 1%;
+		line-height: 36px;
+		margin-bottom: 16px;
+	}
+	.content__row {
+		margin-bottom: 45px;
+		margin-left: -10px;
+	}
+	.content__body {
+	}
+	.content__subtitle {
+		font-size: 18px;
+		letter-spacing: 1%;
+		line-height: 28px;
+		color: #00a650;
+		padding: 5px;
+		text-decoration: underline;
+	}
+	.content__image {
+		display: none;
+	}
+	.contnet__list {
+		padding-left: 15px;
+		column-count: 1;
+	}
+	.content__list li {
+		font-size: 10px;
+	}
+}
+/*!Алаптация 1040-----*/
+@media (max-width: 1040px) {
+	.page__container {
+	}
+	.page-aside {
+	}
+	.page-content {
+	}
+	.content__container {
+	}
+	.content__home {
+		font-size: 12px;
+		color: #8c8c8c;
+		text-decoration: underline;
+		letter-spacing: 1%;
+		line-height: 48px;
+	}
+	.content__products {
+		font-size: 12px;
+		color: #00a550;
+		letter-spacing: 1%;
+		line-height: 48px;
+	}
+	.header-block__title {
+		font-size: 26px;
+		align-items: left;
+		letter-spacing: 1%;
+		line-height: 36px;
+		margin-bottom: 16px;
+	}
+	.content__row {
+		margin: 25px 0px 35px -10px;
+	}
+	.content__body {
+	}
+	.content__subtitle {
+		font-size: 18px;
+		letter-spacing: 1%;
+		line-height: 28px;
+		color: #00a650;
+		padding: 5px;
+		text-decoration: underline;
+	}
+	.content__image {
+	}
+	.contnet__list {
+		padding-left: 15px;
+		column-count: 1;
+	}
+	.content__list li {
+		font-size: 10px;
+	}
+}
